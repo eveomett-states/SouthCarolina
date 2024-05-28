@@ -29,7 +29,7 @@ Demographic data were aggregated from the census block level and precincts were 
 Below is a brief description of each of the listed variables in the attribute table of the VTD shapefile:
 
 - `COUNTY20`: County
-- `P_CODE20`: 
+- `P_CODE20`: Precinct Code
 - `CODE_NAME20`: Voting tabulation district name
 - `CD`: Congressional district ID in 2022 enacted congressional map
 - `SEND`: State Senate district for 2021 State Senate Adopted Plan
