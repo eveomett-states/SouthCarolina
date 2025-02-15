@@ -1,6 +1,11 @@
-# South Carolina Election Shapefile
+# License
+This data was generated using data from the Redistricting Data Hub.  Any use of this project shall also comply with restrictions on use of data and attribution requirements set forth in the Redistricting Data Hub terms and conditions found at: [https://redistrictingdatahub.org/terms-and-conditions/](https://redistrictingdatahub.org/terms-and-conditions/).
 
-This shapefile was processed by Professor Ellen Veomett and her student Ananya Agarwal.
+Use of this project is further governed by the terms of the [Creative Commons Attribution Noncommercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en)
+
+# South Carolina Json
+
+This json was created by Professor Ellen Veomett and her student Ananya Agarwal using the corresponding jupyter notebook. As part of the cleaning process, precincts were nested within counties and small rook adjacencies (under 30.5 m) were changed to queen adjacencies.
 
 # **Sources**
 
@@ -22,14 +27,14 @@ Obtain the following data from Restricting Data Hub
 
 # **Processing**
 
-Demographic data were aggregated from the census block level and precincts were assigned to districts using [MGGG's proration software](https://github.com/mggg/maup). Election data were also prorated onto VTDs from the original precinct shapefile using the `maup` package.
+Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup). 
 
 # **Metadata**
 
 Below is a brief description of each of the listed variables in the attribute table of the VTD shapefile:
 
 - `COUNTY20`: County
-- `P_CODE20`: Precinct Code
+- `PCODE20`: Precinct Code
 - `CODE_NAME20`: Voting tabulation district name
 - `CD`: Congressional district ID in 2022 enacted congressional map
 - `SEND`: State Senate district for 2021 State Senate Adopted Plan
@@ -59,28 +64,33 @@ Below is a brief description of each of the listed variables in the attribute ta
 - `NHPIVAP`: Native Hawaiian and Pacific Islander, non-hispanic, voting age population in 2020 Census
 - `OTHERVAP`: Other race, non-hispanic, voting age population in 2020 Census
 - `2MOREVAP`: Two or more races, non-hispanic, voting age population in 2020 Census
+- `AGR18R`: Number of votes for 2018 Republican Commissioner of Agriculture candidate
+- `AGR18O`: Number of votes for 2018 other party's Commissioner of Agriculture candidate
 - `ATG18D`: Number of votes for 2018 Democratic attorney general candidate
 - `ATG18R`: Number of votes for 2018 Republican attorney general candidate
 - `ATG18O`: Number of votes for 2018 other party's attorney general candidate
+- `COM18R`: Number of votes for 2018 Republican Comptroller candidate
+- `COM18O`: Number of votes for 2018 other party's Comptroller candidate
 - `GOV18D`: Number of votes for 2018 Democratic gubernatorial candidate
 - `GOV18R`: Number of votes for 2018 Republican gubernatorial candidate
 - `GOV18O`: Number of votes for 2018 other party's gubernatorial candidate
+- `PRE16D`: Number of votes for 2016 Democratic presidential candidate
+- `PRE16R`: Number of votes for 2016 Republican presidential candidate
+- `PRE16O`: Number of votes for 2016 other party's presidential candidate
 - `PRE20D`: Number of votes for 2020 Democratic presidential candidate
 - `PRE20R`: Number of votes for 2020 Republican presidential candidate
 - `PRE20O`: Number of votes for 2020 other party's presidential candidate
-- `SOS18D`: Number of votes for 2018 Democratic Secretary of State
-- `SOS18R`: Number of votes for 2018 Republican Secretary of State
-- `SOS18O`: Number of votes for 2018 other party's Secretary of State
-- `TRE18D`: Number of votes for 2018 Democratic Treasurer
-- `TRE18R`: Number of votes for 2018 Republican Treasurer
-- `TRE18O`: Number of votes for 2018 other party's Treasurer
+- `SOS18D`: Number of votes for 2018 Democratic Secretary of State candidate
+- `SOS18R`: Number of votes for 2018 Republican Secretary of State candidate
+- `SOS18O`: Number of votes for 2018 other party's Secretary of State candidate
+- `SPI18R`: Number of votes for 2018 Republican Superintendent of Public Instruction candidate
+- `SPI18O`: Number of votes for 2018 other party's Superintendent of Public Instruction candidate
+- `TRE18D`: Number of votes for 2018 Democratic Treasurer candidate
+- `TRE18R`: Number of votes for 2018 Republican Treasurer candidate
+- `TRE18O`: Number of votes for 2018 other party's Treasurer candidate
+- `USS16D`: Number of votes for 2016 Democratic senate candidate
+- `USS16R`: Number of votes for 2016 Republican senate candidate
+- `USS16O`: Number of votes for 2016 other party's senate candidate
 - `USS20D`: Number of votes for 2020 Democratic senate candidate
 - `USS20R`: Number of votes for 2020 Republican senate candidate
 - `USS20O`: Number of votes for 2020 other party's senate candidate
-- `COM18D`: Number of votes for 2018 Democratic Comptroller
-- `COM18R`: Number of votes for 2018 Republican Comptroller
-- `COM18O`: Number of votes for 2018 other party's Comptroller
-
-# **Projection**
-
-The shapefile uses a UTM NAD83 projection (EPSG: 4269).
