@@ -25,6 +25,8 @@ Obtain the following data from Restricting Data Hub
 
 [2016 election data](https://redistrictingdatahub.org/dataset/vest-2016-south-carolina-precinct-and-election-results/ )**:**  VEST 2016 South Carolina precinct and election results
 
+[2020 County data](https://redistrictingdatahub.org/dataset/south-carolina-county-pl-94171-2020/): from 2020 Census Redistricting Data (P.L. 94-171) Shapefiles
+
 # **Processing**
 
 Data were cleaned and aggregated in the corresponding jupyter notebook using MGGG’s python library [maup](https://github.com/mggg/maup). 
